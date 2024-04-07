@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="dotnetenv" Version="3.0.0" />
     <PackageReference Include="MailerSend.AspNetCore" Version="1.0.0" />
     <PackageReference Include="MailKit" Version="4.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />

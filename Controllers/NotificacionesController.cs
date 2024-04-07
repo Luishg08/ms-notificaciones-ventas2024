@@ -23,9 +23,9 @@ public class NotificacionesController : ControllerBase
         };
         using var client = new RestClient(options);		
         RestRequest request = new RestRequest ();
-		request.AddParameter ("domain", "", ParameterType.UrlSegment);
-		request.Resource = "{}/messages";
-		request.AddParameter ("from", "Mi nombre <>");
+		request.AddParameter ("domain", "sandbox18137c56068f43ffbe5e0a88ebc8e69e.mailgun.org", ParameterType.UrlSegment);
+		request.Resource = "{https://app.mailgun.com/app/sending/domains/sandbox18137c56068f43ffbe5e0a88ebc8e69e.mailgun.org}/messages";
+		request.AddParameter ("from", "Mi nombre <mailgun@sandbox18137c56068f43ffbe5e0a88ebc8e69e.mailgun.org>");
 		request.AddParameter ("to", datos.correoDestino);
 		request.AddParameter ("to", datos.correoDestino);
 		request.AddParameter ("subject", datos.asuntoCorreo);
